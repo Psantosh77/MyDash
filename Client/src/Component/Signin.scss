@@ -1,0 +1,123 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.container {
+	display: flex;
+
+	width: 100%;
+	height: 100vh;
+
+	.container__image {
+		position: relative;
+		width: 50%;
+		height: 100vh;
+
+		.container__image--background {
+			width: 100%;
+			height: 100%;
+			background-size: contain;
+		}
+		.container__image--Heading {
+			position: absolute;
+			font-size: 25px;
+			top: 70%;
+			left: 35%;
+			color: #383838;
+			font-weight: 500;
+		}
+		.container__image--para {
+			position: absolute;
+			width: 273px;
+			text-align: center;
+			font-size: 15px;
+			top: 75%;
+			left: 32%;
+			color: slategray;
+			font-weight: 500;
+		}
+	}
+
+	.container__signup {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		height: 100vh;
+		padding: 4%;
+
+		.container__signup__btncontainer{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.container__signup--login-button{
+				border:none;
+				width: 120px;
+				margin-right: 6%;
+				padding: 10px;
+				border:1px solid rgb(0, 0, 0);
+				border-radius: 3px;
+				background-color: #ffffff;
+				color: #000000;
+				&:hover{
+					background-color: #007bff;
+					color: #ffffff;
+					border:1px solid #007bff;
+				}
+			}
+		}
+		
+
+		.container__signup--title {
+			font-size: 25px;
+			font-weight: 600;
+			color: #403f3f;
+			padding-bottom: 7%;
+		}
+		.container__signup--label {
+			padding-bottom: 10px 0px;
+            font-size: 20px;
+		}
+
+		.container__signup--input {
+			width: 95%;
+			height: 50px;
+			margin-top: 1%;
+            font-size: 20px;
+
+			border: 1px solid #e5e5e5;
+		}
+		.container__signup--error {
+			font-size: 15px;
+			color: red;
+		}
+	}
+
+	.checkboxContainer {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 20px;
+
+		.checkboxContainer__checkbox {
+			margin-right: 10px;
+			width: 20px;
+		}
+
+		.checkboxContainer__para {
+			font-weight: 600;
+		}
+	}
+
+    .checkboxContainer__button{
+        margin-top: 20px;
+        width:20%;
+        height:50px;
+        color:#ffffff;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;;
+
+    }
+}
